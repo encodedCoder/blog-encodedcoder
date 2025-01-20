@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -8,19 +8,19 @@ export default function Home() {
         <nav>
           <ul className="flex gap-4">
             <li>
-              <a href="/" className="hover:underline">
-                Home
-              </a>
+              <Link href="/" legacyBehavior>
+                <a className="hover:underline">Home</a>
+              </Link>
             </li>
             <li>
-              <a href="/about" className="hover:underline">
-                About
-              </a>
+              <Link href="/about" legacyBehavior>
+                <a className="hover:underline">About</a>
+              </Link>
             </li>
             <li>
-              <a href="/contact" className="hover:underline">
-                Contact
-              </a>
+              <Link href="/contact" legacyBehavior>
+                <a className="hover:underline">Contact</a>
+              </Link>
             </li>
           </ul>
         </nav>
